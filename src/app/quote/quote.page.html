@@ -1,0 +1,35 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>quote</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content> -->
+
+<ion-header>  
+  <ion-toolbar>
+    <ion-buttons end *ngIf="canDelete">
+      <button ion-button (click)="delete()">
+          <ion-icon name="trash"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>The Quotes Database</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-list>
+        <ion-item>
+            <ion-label>Title</ion-label>
+            <ion-input text-right type="text" [(ngModel)]="quote.title"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Description</ion-label>
+            <ion-input text-right type="text" [(ngModel)]="quote.description"></ion-input>
+        </ion-item>        
+    </ion-list>
+    <button ion-button block (click)="addOrUpdate()">Add/Update Quote</button>
+</ion-content>

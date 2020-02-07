@@ -1,0 +1,7 @@
+{
+  "name": "WordsOfWisdom",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
